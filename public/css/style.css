@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    /* Colors */
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --light_blue: #1259c3;
+    --dark-grey: #666;
+    --light-grey: #ebebeb;
+    --green: #39b54a;
+    /* Font */
+    --font-roboto: "Roboto", sans-serif;
+    /* Font sizes */
+    --paragraph : 12px;
+    --title: 24px;
+    --prices: 18px;
+    --discounts-descriptions: 16px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-roboto);
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+body {
+    font-family: var(--font-roboto);
+    background-color: var(--light-grey);
+}
+li {
+    list-style: none;
+}
+
+header {
+    background-color: var(--yellow);
+    font-size: var(--paragraph);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.search-bar-container{
+    position: relative;
+}
+.search-bar {
+    width: 24rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    text-align: start;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.fa-search{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 1.5rem;
+}
+
+
+.subheader-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 25px;
+}
+
+.nav1 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav1 ul li a{
+    padding-right: 45px;
+    font-size: 15px;
+}
+
+ .logo {
+    width:250px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+/* Quota */
+
+.header .quota {
+    font-size: 1rem;
+    text-align: center;
+    margin: 35px 40px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 7rem;
+}
+
+
+
+/* FOOTER */
+.footer-container {
+    margin-top: 55px;
+    padding-top: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+
+
+footer article.footer-article {
+    text-align: center;
+}
+
+footer article.footer-article i{
+    color: var(--light_blue);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+footer article.footer-article h5 {
+    font-size: var(--discounts-descriptions);
+}
+
+footer article.footer-article p {
+    font-size: var(--paragraph);
+    width: 77%;
+    margin: 0 auto;
+}
+
+.footer-copy p{
+    padding: 25px 25px;
+    font-size: 12px;
+    color: grey;
+    border-top: 1px solid grey;
+    
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.section-title{
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card img{
+    width: 350px;
+}
+
+.card-content{
+    border-top: 1px solid var(--light-grey);
+    padding: 15px;
+    position: relative;
+
+}
+
+ .icon-truck{
+    display: block;
+ font-size: 16px;
+ padding: 5px;
+ width: 30px;
+ height: 30px;
+ border: 1px solid #39b54a;
+ background-color: #FFF;
+ border-radius: 50%;
+ position: absolute;
+ right: 20px;
+ top: -15px;
+}
+
+.icon-truck i {
+    color: var(--green);
+    font-size: 16px;
+}
+
+
+.product-info {
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 15px;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2.5rem;
+
+    text-transform: uppercase;
+}
+
+.btn-submit {
+   background-color: var(--light_blue);
+   width: 100%;
+   color: white;
+}
+
+
+.form-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form inputs */
+
+.input-container,
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 70%;
+}
+
+.button-container {
+    align-items: center;
+    
+}
+
+.input-style {
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    padding: .5rem;
+}
+
+.input-style::placeholder {
+    color: var(--dark-grey);
+}
+
+/* BUTTONS */
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2.5rem;
+
+    text-transform: uppercase;
+}
+
+.btn-submit {
+   background-color: var(--light_blue);
+   width: 100%;
+   color: white;
+}
+
+
+.register-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container-reg {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 35%;
+}
+.input-reg {
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: .5rem;
+}
+
+.input-reg::placeholder {
+    color: var(--dark-grey);
+}
+.b {
+    font-size: 1.2rem;
+    position: relative;
+    right: 7rem;
+}
+
+.c {
+    font-size: 1.2rem;
+    position: relative;
+    right: 7.5rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.i {
+    font-size: 1.2rem;
+    position: relative;
+    right: 9.5rem;
+    padding-top: 10px;
+}
+.input-container-re {
+    position: relative;
+    right: 4.5rem;
+}
+.input-container-re .one {
+  padding-right: 2.5rem;
+}
+.input-container-re .onet {
+    margin-left: 5px;
+ }
+.input-container-re .two {
+    margin-left: 1.5rem;
+ }
+.input-container-re .twot {
+    margin-left: 5px;
+}
+.check {
+    position: relative;
+    right: 8.5rem;
+}
+
+.check1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.check2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.check3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.check4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.check5 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+@media (max-width: 1120px ){
+    .header-container{
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    
+    .nav1 ul{
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 420px){
+    .subheader-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
